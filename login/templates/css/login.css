@@ -1,0 +1,77 @@
+body{
+
+	margin: 10% 26% 15% 26%;
+	background: url(../imagenes/unla.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+h1{
+	text-align: center;
+	color: white;
+}
+
+div .cuadro{
+	background: white;
+	border:1px solid black; 
+	padding: 4%;
+	font-family: "bookman old style";
+	font-size: 14px;
+	border-radius: 20px;
+	box-shadow: 5px 5px 0px #5a9fe5;
+}
+
+label.uyc{
+
+	display: block;
+	font-weight: normal;
+}
+
+label.check{
+	font-weight: normal;
+}
+
+input.uyc{
+	margin-bottom: 20px;
+	width: 50%;
+	padding: 10px;
+}
+
+input:focus{
+	border: 2px solid #93b1e3;
+}
+
+input.boton{
+	background-color: #5a9fe5;
+	color: white;
+	width: 49%;
+}
+
+input[type="button"]:hover{
+	border:2px solid black;
+	cursor: pointer;
+}
+
+input[type="button"]:active.boton{
+	background-color: #5a64e5;
+}
+
+ footer p{
+	display: inline-block;
+}
+
+footer {
+	color: white;
+	text-align: center;
+	padding: 5% 0% 0% 0%;
+}
+
+a{
+	color: #5a9fe5;
+}
+
+a.contacto{
+	color:white;
+}
+
+a:link, a:visited, a:active{
+	text-decoration: none;

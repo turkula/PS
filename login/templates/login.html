@@ -1,0 +1,55 @@
+{% load staticfiles%}
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+
+    <!-- Title Page -->  
+    <title>Sistema de Gestión de Proyectos basados en IEEE</title>
+ 
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.min.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static"css/login.css" %}">
+</head>
+<body>
+<div class="login-panel panel panel-default">
+   <header>
+   		<h1>Sistema de Gestión de Proyectos basados en IEEE</h1>
+   </header>
+   <section class="main">
+   <div id="container">
+        <div class="cuadro">
+        <form role="form" method="post" id="form_login">
+            {% csrf_token %}
+            <!-- Usuario -->
+            <label for="name" class="uyc">Usuario:</label >
+            {{ form.username}}
+            <br/><br/>
+            <!-- contraseña -->
+            <label for="password" class="uyc">Contraseña:</label >
+            {{form.password}}
+            <a href="recuperar_contraseña.html">¿Olvidó su contraseña?</a>
+            <br/><br/>
+            
+            <div id="lower">
+                <input type="checkbox"><label class="check" for="checkbox">Manteaanerme conectado</label>
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-lg btn-succes btnblock" name="login"/>Login</button>
+            </div>
+            <br/><br/>
+            <a href="crear_cuenta.html">Crear cuenta</a>
+        </form>  
+        </div>     
+    </div>
+    </section>
+    <footer>
+    	<p>Contacto: </p>
+    	<a href="mailto:claudioturkula@hotmail.com" class="contacto">claudioturkula@hotmail.com</a>
+    	<a href="mailto:anidonicolas@gmail.com" class="contacto">anidonicolas@gmail.com</a>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</div>
+</body>
+</html>
